@@ -1,0 +1,32 @@
+{%extends 'base.html' %}
+{% block content %}
+
+<h1>Customer record: </h1>
+
+    <table class="table table-hover table-striped-columns">
+        <thead class = "table-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Address</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ customer_record.first_name }}
+                 {{ customer_record.last_name }}</td>
+                <td>{{ customer_record.email }}
+                <td>{{ customer_record.phone }}
+                <td>{{ customer_record.address }}
+                <td>{{ customer_record.city }}
+                <td>{{ customer_record.state }}  
+            </tr>
+             
+        </tr>
+          </tbody>
+        </table>
+
+{% endblock %}
